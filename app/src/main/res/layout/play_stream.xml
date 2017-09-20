@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/play_stream_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".activity.PublishActivity">
+
+    <com.red5pro.streaming.view.R5VideoView
+        android:id="@+id/subscribeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/blurredImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="802dp"
+        android:background="@drawable/mosaic_main"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/mosaic_main" />
+
+    <RelativeLayout
+        android:id="@+id/player_loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/app_black_transparent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/circular_progress"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate"
+            app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/play_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black_gradient"
+        android:gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:visibility="visible"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleMarginTop="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/play_stream_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:background="@drawable/bottom_gradient"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_stream_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/play_stream_type_layout"
+            android:layout_alignParentLeft="true"
+            app:reverseLayout="true"
+            app:stackFromEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/play_stream_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/play_stream_type_comment"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="3.6"
+                android:gravity="center"
+                android:hint="@string/chat_hint"
+                android:textColor="@color/ash_color_light"
+                android:textColorHint="@color/ash_color_light"
+                android:background="@drawable/comment_background"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/play_stream_chat_send"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_action_sendmessage"
+                android:clickable="true"
+                android:visibility="visible"
+                android:foreground="?attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

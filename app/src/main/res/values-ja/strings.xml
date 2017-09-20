@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ******** Strings are Showing currently start ********* -->
+    <string name="app_name">ライブチャット</string>
+    <string name="version_number">アルファバージョン1.0</string>
+
+    <!--Password reset screen start-->
+    <string name="success_dialog_title">成功しました</string>
+    <!--Password reset screen end-->
+
+    <!--Login Screen start-->
+    <string name="sign_up_dialog_message">Enjoy Live Streaming</string>
+    <string name="login_failed_message">認証できませんでした</string>
+    <string name="valid_password">3〜32個までの英数字</string>
+    <string name="login_toolbar">ログイン</string>
+    <string name="password_input_hint">パスワード</string>
+    <string name="username_hint">ユーザ名</string>
+    <string name="valid_username">特殊文字を除く3〜64文字</string>
+    <string name="valid_username2">英数字のみ可</string>
+    <string name="getting_ready">ロード中・・・</string>
+    <string name="xmpp_signup_error">XMPP Signup Error!</string>
+    <string name="xmpp_signin_error">XMPP Signin Error!</string>
+    <string name="xmpp_connection_error">XMPP Connection Error!</string>
+    <string name="thanks">ありがとう</string>
+    <!--Login Screen end-->
+
+    <!--Navigation Holder start-->
+    <string name="drawer_open">開く</string>
+    <string name="drawer_close">閉じる</string>
+    <string name="something_wrong">ロードできませんでした</string>
+    <string name="exit_message">終了しますか？</string>
+    <string name="yes">はい</string>
+    <string name="no">いえ</string>
+    <string name="home_nav_title">ホーム</string>
+    <string name="settings_nav_title">設定</string>
+    <string name="help_nav_title">ヘルプ</string>
+    <string name="logout_nav_title">ログアウト</string>
+    <!--Navigation Holder End-->
+
+    <!--Play Stream Screen Start-->
+    <string name="publisher_stop_broadcast">Stream stopped by publisher</string>
+    <string name="live_broadcast_finish">             ライブストリーム終了</string> <!--should use space at first-->
+    <string name="ok">OK</string>
+    <string name="streaming_disconnected">ストリーム切断</string>
+    <string name="stream_ended">このストリームはすでに終了しています。.\n戻る</string>
+    <string name="no_internet_connection">インターネット接続を見つかりません</string>
+    <string name="retry">リトライ</string>
+    <string name="chat_hint">コメント</string>
+    <!--Play Stream Screen End-->
+
+    <!--Publish Stream Screen Start-->
+    <string name="no_front_camera">フロントカメラを見つかりません</string>
+    <string name="can_not_connect_camera">カメラに接続できませんでした</string>
+    <string name="stop_live">ライブストリーム停止</string>
+    <string name="go_live">ライブストリーム開始</string>
+    <string name="can_not_stop_live">10秒後に停止いたします</string>
+    <string name="live_disconnected">ライブストリーム切断</string>
+    <!--Publish Stream Screen End-->
+
+    <!--Splash Screen Start-->
+    <string name="permission_granted">アクセス許可が承認されました</string>
+    <string name="permission_denied">アクセス許可が拒否されました</string>
+    <string name="permission_dialog_message">アクセス許可を承認して下さい</string>
+    <string name="permission_dialog_closing_message">これから全てのアクセス許可を承認します</string>
+    <string name="getting_start">準備中・・・</string>
+    <!--Splash Screen End-->
+
+    <!--Home Screen Start-->
+    <string name="stream_is_not_alive">ストリームが終了しました。 引っ張って更新。</string>
+    <string name="no_stream">ライブストリムはありません</string>
+    <!--Home Screen End-->
+
+    <!--new added for Logout and pull to refresh feature-->
+    <string name="are_you_sure">本当に実行しますか？</string>
+    <string name="log_out_message">ログイン画面に戻る</string>
+    <string name="pull_to_refresh">リフレッシュ</string>
+    <string name="add_photo">写真を追加</string>
+    <string name="address_title">アドレス</string>
+    <string name="cancel">キャンセル</string>
+    <string name="choose">選択</string>
+    <string name="choose_from_gallery"></string>
+    <string name="display_name">表示名</string>
+    <string name="don_not_edit_email_address">メールアドレスは変更できません</string>
+    <string name="female">女性</string>
+    <string name="forgot_password_label">パスワードをお忘れですか？</string>
+    <string name="gender_title">性別</string>
+
+    <!-- ********* Strings are Showing currently end ********** -->
+</resources>

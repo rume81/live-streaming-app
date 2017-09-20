@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <group android:checkableBehavior="single">-->
+    <group android:id="@+id/my_id1">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home_nav_title"
+            android:icon="@drawable/ic_action_action_home"/>
+
+       <!-- <item
+            android:id="@+id/profile"
+            android:title="@string/profile_nav_title"
+            android:icon="@drawable/ic_action_image_timer_auto"/>-->
+
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings_nav_title"
+            android:icon="@drawable/ic_action_action_settings"/>
+
+        <!--<item
+            android:id="@+id/help"
+            android:title="@string/help_nav_title"
+            android:icon="@drawable/ic_action_action_help"/>-->
+
+    </group>
+
+    <group android:id="@+id/my_id2">
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout_nav_title"
+            android:icon="@drawable/ic_action_action_exit_to_app"/>
+    </group>
+
+</menu>

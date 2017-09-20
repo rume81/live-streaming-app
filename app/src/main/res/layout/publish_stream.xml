@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/publishParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".activity.PublishActivity">
+
+    <FrameLayout
+        android:id="@+id/preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/blurredImagePublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/publish_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black_gradient"
+        android:gravity="top"
+        android:minHeight="?attr/actionBarSize"
+        android:visibility="visible"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleMarginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="220dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stop_bg"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/stop_live"
+                android:textAllCaps="true"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.appyvet.rangebar.RangeBar
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangebar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/publish_toolbar"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        custom:rangeBar="false"
+        custom:tickStart="0"
+        custom:tickInterval="1"
+        custom:tickEnd="5"
+        custom:pinRadius="0dp"
+        custom:connectingLineColor="@color/primary_border"
+        custom:tickColor="@color/primary_border"
+        custom:tickHeight="0dp"
+        custom:selectorSize="10dp"
+        custom:selectorColor="@color/primary_border"
+        custom:rangeBarColor="@color/primary_border"/>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_gradient">
+
+            <Button
+                android:id="@+id/publishButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/stop_bg"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/go_live"
+                android:textAllCaps="true"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_gradient"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/publish_stream_type_layout"
+                android:layout_alignParentLeft="true"
+                app:reverseLayout="true"
+                app:stackFromEnd="true" />
+
+            <LinearLayout
+                android:id="@+id/publish_stream_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <EditText
+                    android:id="@+id/publish_stream_type_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.6"
+                    android:gravity="center"
+                    android:hint="@string/chat_hint"
+                    android:textColor="@color/ash_color_light"
+                    android:textColorHint="@color/ash_color_light"
+                    android:background="@drawable/comment_background"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/publish_stream_chat_send"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/ic_action_sendmessage"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    android:foreground="?attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

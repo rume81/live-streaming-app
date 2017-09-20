@@ -1,0 +1,209 @@
+<resources>
+
+    <!-- ******** Strings are Showing currently start ********* -->
+    <string name="app_name">Live Streaming</string>
+    <string name="version_number">Alpha Version 1.0</string>
+
+    <!--Password reset screen start-->
+    <string name="success_dialog_title">Success</string>
+    <!--Password reset screen end-->
+
+    <!--Login Screen start-->
+    <string name="sign_up_dialog_message">Enjoy Live Streaming</string>
+    <string name="login_failed_message">Authentication failed</string>
+    <string name="valid_password">3 to 32 alphanumeric characters</string>
+    <string name="login_toolbar">Login</string>
+    <string name="password_input_hint">Password</string>
+    <string name="username_hint">Username</string>
+    <string name="valid_username">3 to 64 characters excluding special characters</string>
+    <string name="valid_username2">Only alphanumeric characters allowed</string>
+    <string name="getting_ready">Getting ready...</string>
+    <string name="xmpp_signup_error">XMPP Signup Error!</string>
+    <string name="xmpp_signin_error">XMPP Signin Error!</string>
+    <string name="xmpp_connection_error">XMPP Connection Error!</string>
+    <string name="thanks">Thanks</string>
+    <!--Login Screen end-->
+
+    <!--Navigation Holder start-->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="something_wrong">Failed to load screen</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="home_nav_title">Home</string>
+    <string name="settings_nav_title">Settings</string>
+    <string name="help_nav_title">Help</string>
+    <string name="logout_nav_title">Logout</string>
+    <!--Navigation Holder End-->
+
+    <!--Play Stream Screen Start-->
+    <string name="ok">OK</string>
+    <string name="streaming_disconnected">Stream disconnected</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="retry">RETRY</string>
+    <string name="chat_hint">Comments</string>
+    <!--Play Stream Screen End-->
+
+    <!--Publish Stream Screen Start-->
+    <string name="no_front_camera">Front camera not found</string>
+    <string name="can_not_connect_camera">Cannot connect to camera</string>
+    <string name="stop_live">Stop Live Stream</string>
+    <string name="go_live">Go Live</string>
+    <string name="live_disconnected">Live stream disconnected</string>
+    <!--Publish Stream Screen End-->
+
+    <!--Splash Screen Start-->
+    <string name="getting_start">Getting ready...</string>
+    <!--Splash Screen End-->
+
+    <!--Home Screen Start-->
+    <string name="stream_is_not_alive">Stream ended. Pull to refresh.</string>
+    <string name="no_stream">No available streams</string>
+    <!--Home Screen End-->
+
+
+    <!--updated strings which is not translated yet start-->
+    <!--new added for Logout and pull to refresh feature-->
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="log_out_message">Return to login</string>
+    <string name="pull_to_refresh">Pull To Refresh</string>
+
+    <!--new added for login error feature-->
+    <string name="login_error_dialog_title">Login Error!</string>
+    <string name="try_again">Try again</string>
+    <string name="valid_username3">username test in not allowed</string>
+
+    <!-- new string for Permission-->
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_grant">Grant</string>
+    <string name="permission_dialog_title">Need Multiple Permissions</string>
+    <string name="permission_dialog_message">We need Camera and Audio Record permissions.</string>
+    <string name="permission_from_settings">Go to Permissions to Grant  Camera and Audio Record</string>
+    <string name="permission_dialog_error_message">Unable to get Permission</string>
+    <string name="hey">Hey!</string>
+
+    <!-- updated string -->
+    <string name="exit_message">Are you sure you want to exit?</string>
+
+    <!--new added for session error feature-->
+    <string name="session_error_dialog_title">Session Disconnected!</string>
+    <string name="session_error_dialog_message">Sorry! your session has been Disconnected</string>
+    <string name="create_again">Re-connect</string>
+    <string name="session_creating">Re-connecting...</string>
+
+    <!-- new strings added for network error handel in play stream page -->
+    <string name="stream_finish">Streaming Finished!</string>
+    <string name="network_error_title">Network Error!</string>
+    <string name="network_error_message_play_stream">Streaming interrupted due to network error</string>
+    <string name="go_back">Go Back</string>
+    <string name="publisher_stop_broadcast">Streaming finished by publisher</string>
+    <string name="stream_ended">This stream is no longer active!</string>
+    <string name="network_error_message_record_stream">Publishing Stream interrupted due to network error</string>
+
+    <!--new string for stop stream feature-->
+    <string name="stopping">Stopping...</string>
+    <string name="stream_error_title">Recording Error!</string>
+    <string name="stream_error_message_play_stream">Streaming interrupted due to recording error</string>
+
+    <!-- Streaming Server error message-->
+    <string name="stream_server_error_title">Server Error!</string>
+    <string name="stream_server_error_message">Streaming Server disconnected due to network error</string>
+
+    <!-- Settings Page Strings-->
+    <string name="send_request_button">Send Request</string>
+    <string name="server_address">Login Server Address</string>
+    <string name="settings_message">Make Request For Necessary Server Configuration.</string>
+    <string name="reset_dialog_message">Request sent successfully</string>
+    <string name="success_dialog_button">Thanks</string>
+    <string name="request_failed_message">Request failed for Wrong Data</string>
+    <string name="valid_server_address">enter valid server address</string>
+
+    <!-- update delay time to stop recording -->
+    <string name="can_not_stop_live">Stopping stream in 10 seconds...</string>
+
+    <!--connection error message-->
+    <string name="connection_error_dialog_title">Connection Error!</string>
+    <string name="no_internet_toolber">WiFi Settings</string>
+    <string name="exit">Exit</string>
+    <string name="signin_error">Login Error</string>
+    <string name="destroy_error">Duplicate Stream existed</string>
+    <string name="join_error">Can not join new stream</string>
+    <string name="create_error">Can not Create new stream</string>
+    <string name="stream_error_message_publish_stream">Streaming interrupted due to network error</string>
+    <string name="can_not_cancel">You have to go back</string>
+    <string name="can_not_set_blur">Blur will be enable during recording</string>
+
+    <!--login error extra message-->
+    <string name="want_to_try_again">Want to try again?</string>
+    <string name="login_error_dialog_message">User Login Failed!</string>
+
+    <!--crash extra message-->
+    <string name="crash_title">App Refreshed!</string>
+    <string name="crash_message">Refreshed due to internal problem</string>
+
+    <!-- ********* Strings are Showing currently end ********** -->
+
+
+    <!-- *******  Strings are not Showing currently start ********-->
+    <!-- These Strings are not visible to the user currently but should not remove for avoiding build error as we have not removed profile and sign up related class-->
+    <!--Sign up Screen Started-->
+    <string name="forgot_password_label">Forgot Password?</string>
+    <string name="sign_up_failed">SignUp failed for Wrong Data</string>
+    <string name="valid_name">should between 4 and 20 characters</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="sign_up_toolbar">SignUp</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="external_storage_permission_title">Permission necessary</string>
+    <string name="external_storage_permission_message">External storage permission is necessary</string>
+    <!--Sign Up screen end-->
+
+    <!--Profile Screen Start-->
+    <string name="profile_toolbar">My Profile</string>
+    <string name="don_not_edit_email_address">You Can not edit your E-mail address. It\'s your base identity</string>
+    <string name="enter_data">Enter Data</string>
+    <string name="edit_display_name">Edit Display Name</string>
+    <string name="profile_edit_hint">type here</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="edit_gender">Edit Gender</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_one_item">Please select one item to edit previous data</string>
+    <string name="choose">Choose</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="add_photo">Add Photo!</string>
+    <string name="display_name">Display Name</string>
+    <string name="gender_title">Gender</string>
+    <string name="address_title">Address</string>
+    <!--Profile Screen End-->
+
+    <!--No Internet Screen Start-->
+    <string name="oops">Whoops!</string>
+    <string name="internet_connection_not_found">No Internet Connection Found. Check your connection Settings...</string>
+    <!--No Internet Screen End-->
+
+    <string name="profile_nav_title">Profile</string>
+    <string name="create_display_name">Tap to set Display Name</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="go_to_account">Go To Account</string>
+
+
+
+
+    <string name="valid_email_address">enter a valid email address</string>
+    <string name="reset_password_toolbar">Reset Password</string>
+    <string name="reset_password_message">We just need your registered e-mail address to send you the password reset instructions.</string>
+    <string name="email_address">E-mail Address</string>
+
+    <!-- ********** Strings are not Showing currently end *****-->
+
+</resources>

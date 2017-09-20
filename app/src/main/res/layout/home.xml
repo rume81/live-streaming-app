@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/home_parent_layout"
+    android:background="@color/ash_color_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/stream_loading_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/stream_progress"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/blue"
+                android:fitsSystemWindows="true"
+                android:layout_centerInParent="true"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/stream_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/stream_no_internet_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/ash_color_light"
+            android:layout_centerInParent="true"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_streams"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_stream_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/ash_color_light"
+            android:layout_centerInParent="true"
+            android:text="@string/no_stream"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <!--this GIF is temporary instead of showing stream list, and will be removed when list will be used-->
+    <ImageView
+        android:id="@+id/home_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"/>
+    <!--this GIF is temporary instead of showing stream list, and will be removed when list will be used-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">  <!--was visible , now changed for HIDE STREAM LIST-->
+
+        <LinearLayout
+            android:id="@+id/pull_to_refresh_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="4dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pull_to_refresh_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:text="@string/pull_to_refresh"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="16dp"
+                android:id="@+id/down_arrow"
+                android:visibility="visible"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_down_arrow"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:id="@+id/swipe_layout">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/streamItemRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:reverseLayout="true"
+                app:stackFromEnd="true"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/live_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:visibility="visible"
+        android:src="@drawable/go_live"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
